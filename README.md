@@ -1,1 +1,1 @@
-Solutions to some problems on hackerrank.com
+Yup! Its a sandbox.
