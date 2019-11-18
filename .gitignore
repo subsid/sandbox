@@ -2,3 +2,6 @@
 .idea
 .env
 .ipynb_checkpoints/
+.ijwb
+bazel-*
+third_party
