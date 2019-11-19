@@ -1,4 +1,6 @@
 load("@io_bazel_rules_scala//scala:scala.bzl", "scala_library", "scala_binary", "scala_test")
+load("@io_bazel_rules_scala//scala:scala.bzl", "scala_repl")
+
 
 scala_binary(
     name = "scala-sandbox",
@@ -7,3 +9,11 @@ scala_binary(
         "//scala-sandbox/src/main/scala/com/sandbox"
     ]
 )
+
+scala_repl(
+    name = "repl",
+    deps = [
+        "//scala-sandbox/src/main/scala/com/sandbox"
+    ],
+)
+
