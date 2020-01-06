@@ -4,7 +4,7 @@ load("@io_bazel_rules_scala//scala:scala.bzl", "scala_repl")
 
 scala_binary(
     name = "scala-sandbox",
-    main_class = "com.sandbox.Sandbox",
+    main_class = "com.sandbox.SandboxScala",
     deps = [
         "//scala-sandbox/src/main/scala/com/sandbox"
     ]
