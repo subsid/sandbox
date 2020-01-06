@@ -3,8 +3,11 @@ load("@io_bazel_rules_scala//scala:scala.bzl", "scala_library", "scala_binary", 
 scala_library(
     name = "sandbox",
     srcs = glob(["*.scala"]),
+    resources = ["//scala-sandbox/src/main/resources:config"],
     visibility = ["//scala-sandbox:__subpackages__"],
     deps = [
-        "//third_party/jvm/org/scalaz:scalaz_core"
+        "//third_party/jvm/org/scalaz:scalaz_core",
+        "//third_party/jvm/com/twitter:util_core",
+        "//third_party/jvm/com/typesafe:config"
         ]
 )

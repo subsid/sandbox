@@ -13,4 +13,13 @@ dependencies:
     scalaz-core:
       lang: scala
       version: "7.2.29"
+  com.twitter:
+    util:
+      lang: scala
+      modules: [ "app", "codec", "core", "hashing", "jvm", "logging", "slf4j-api", "stats" ]
+      version: "19.10.0"
+  com.typesafe:
+    config:
+      version: "1.4.0"
+      lang: java
 

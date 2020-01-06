@@ -10,6 +10,14 @@ scala_binary(
     ]
 )
 
+scala_binary(
+    name = "scala-hocon",
+    main_class = "com.sandbox.HoconTest",
+    deps = [
+        "//scala-sandbox/src/main/scala/com/sandbox"
+    ]
+)
+
 scala_repl(
     name = "repl",
     deps = [

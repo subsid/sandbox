@@ -1,0 +1,9 @@
+filegroup(
+    name = "config",
+    srcs = [
+        "application.conf",
+        "base.conf",
+        "base2.conf",
+    ],
+    visibility=["//visibility:public"],
+)
