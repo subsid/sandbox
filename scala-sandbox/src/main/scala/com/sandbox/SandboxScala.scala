@@ -32,9 +32,30 @@ object rtf {
 
 }
 
+object Foo {
+  def foo(): String = {
+    return ("foo")
+  }
+
+  private val baz = "baz"
+}
+
+case class Foo() {
+  import Foo._
+
+  val bar = Foo.baz
+
+  def baz(): String = {
+    return bar
+  }
+
+}
+
 object SandboxScala {
   def main(args: Array[String]): Unit = {
-    val a = List(1, 2, 3) <*> List((_: Int) * 0, (_: Int) + 100, (x: Int) => x * x)
-    print(a)
+    // val a = List(1, 2, 3) <*> List((_: Int) * 0, (_: Int) + 100, (x: Int) => x * x)
+    // print(a)
+    val f = new Foo()
+    println(f.baz())
   }
 }
