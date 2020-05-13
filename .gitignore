@@ -5,3 +5,4 @@
 .ijwb
 bazel-*
 third_party
+tools/

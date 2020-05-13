@@ -2,14 +2,22 @@ java_binary(
     name = "java-sandbox",
     main_class = "com.sandbox.SandboxJava",
     runtime_deps = [
-        "//java-sandbox/src/main/java/com/sandbox"
-    ]
+        "//java-sandbox/src/main/java/com/sandbox",
+    ],
 )
 
 java_binary(
     name = "max_sum_subarray_of_size_k",
     main_class = "com.algorithms.sliding_window.MaxSumSubArrayOfSizeK",
     runtime_deps = [
-        "//java-sandbox/src/main/java/com/algorithms/sliding_window"
-    ]
+        "//java-sandbox/src/main/java/com/algorithms/sliding_window",
+    ],
+)
+
+java_binary(
+    name = "average_subarray_size_k",
+    main_class = "com.algorithms.sliding_window.AverageOfSubarrayOfSizeK",
+    runtime_deps = [
+        "//java-sandbox/src/main/java/com/algorithms/sliding_window",
+    ],
 )

@@ -9,6 +9,6 @@ public class MaxSumSubArrayOfSizeK {
     public static void main(String[] args) {
 
         System.out.println("Max sum subarray of size k");
-        System.out.println(MaxSumSubArrayOfSizeK.findMaxSumSubArray(2, arr));
+//        System.out.println(MaxSumSubArrayOfSizeK.findMaxSumSubArray(2, arr));
     }
 }

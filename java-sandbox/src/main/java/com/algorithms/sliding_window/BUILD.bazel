@@ -2,5 +2,5 @@ java_library(
     name = "sliding_window",
     srcs = glob(["*.java"]),
     visibility = ["//java-sandbox:__subpackages__"],
-    deps = []
+    deps = [],
 )
