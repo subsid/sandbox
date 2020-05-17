@@ -46,6 +46,7 @@ object MonoidOps {
   }
 }
 
+// https://www.matfournier.com/2020-01-15-getting-funcey-part3-typeclasses/
 object FizzBuzz {
   import MonoidOps._
 

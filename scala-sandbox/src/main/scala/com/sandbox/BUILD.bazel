@@ -6,6 +6,7 @@ scala_library(
     resources = ["//scala-sandbox/src/main/resources:config"],
     visibility = ["//scala-sandbox:__subpackages__"],
     deps = [
-        "@maven//:com_twitter_finatra_http_2_12",
+        "@maven//:org_typelevel_cats_core_2_12",
+        "@maven//:org_typelevel_cats_effect_2_12",
     ],
 )

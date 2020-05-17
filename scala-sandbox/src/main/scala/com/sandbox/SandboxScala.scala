@@ -1,27 +1,25 @@
 package com.sandbox
 
-object Foo {
-  def foo(): String = {
-    return ("foo")
-  }
-
-  private val baz = "baz"
-}
-
-case class Foo() {
-  import Foo._
-
-  val bar = Foo.baz
-
-  def baz(): String = {
-    return bar
-  }
-
-}
+import cats.effect.IO
+import cats.implicits._
 
 object SandboxScala {
   def main(args: Array[String]): Unit = {
-    val f = new Foo()
-    println(f.baz())
+    val io1 = IO {
+      Thread.sleep(1000)
+
+      42
+    }
+    println("Foo")
+
+    val io2 = IO {
+      Thread.sleep(500)
+
+      21
+    }
+
+    val ios = List(io1, io2)
+
+    println(ios.sequence.unsafeRunSync())
   }
 }
