@@ -67,6 +67,7 @@ maven_install(
         "org.hamcrest:hamcrest-library:1.3",
         "org.typelevel:cats-core_2.12:2.1.1",
         "org.typelevel:cats-effect_2.12:2.1.3",
+        "org.typelevel:cats-kernel_2.12:2.1.1",
     ],
     repositories = [
         "https://jcenter.bintray.com/",

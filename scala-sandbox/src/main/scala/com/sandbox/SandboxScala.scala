@@ -15,7 +15,7 @@ object SandboxScala {
     val io2 = IO {
       Thread.sleep(500)
 
-      21
+      22
     }
 
     val ios = List(io1, io2)

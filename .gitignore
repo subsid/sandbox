@@ -5,4 +5,4 @@
 .ijwb
 bazel-*
 third_party
-tools/
+tools/build_rules
