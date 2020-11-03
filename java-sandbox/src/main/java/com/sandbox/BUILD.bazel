@@ -1,6 +1,6 @@
 java_library(
     name = "sandbox",
-    srcs = glob(["*.java"]),
+    srcs = glob(["SandboxJava.java"]),
     visibility = ["//java-sandbox:__subpackages__"],
     deps = [],
 )
@@ -10,6 +10,6 @@ java_binary(
     srcs = ["Threading.java"],
     main_class = "com.sandbox.Threading",
     deps = [
-        "@maven//:junit_junit_4_12",
+        "@maven//:junit_junit",
     ],
 )

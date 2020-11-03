@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.io.UncheckedIOException;
 import java.util.concurrent.*;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.*;
 
 // https://www.baeldung.com/thread-pool-java-and-guava
 public class Threading {
@@ -58,13 +58,14 @@ public class Threading {
         executor.submit(() -> System.out.println("Fourth job"));
         assertEquals(2, executor.getPoolSize());
         assertEquals(2, executor.getQueue().size());
-    }
+        executor.shutdown();
+            }
 
 
     public static void main(String[] args) throws ExecutionException, InterruptedException {
 //        fixedPoolExecutor();
-//        threadPoolExecutor();
-        forkJoinPoolExecutor();
+        threadPoolExecutor();
+//        forkJoinPoolExecutor();
     }
 
     private static void forkJoinPoolExecutor() {

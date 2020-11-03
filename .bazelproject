@@ -3,7 +3,3 @@ directories:
 
 targets:
   //...
-
-additional_languages:
-  scala
-
