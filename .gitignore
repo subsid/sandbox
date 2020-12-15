@@ -9,3 +9,4 @@ tools/build_rules
 scala-sandbox/target/
 scala-sandbox/project/
 *.bloop
+.caches/

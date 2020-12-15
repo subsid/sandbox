@@ -1,0 +1,5 @@
+java_binary(
+    name = "sandbox-searcher",
+    srcs = ["SandboxSearcher.java"],
+    main_class = "com.sid.lucenesearcher.SandboxSearcher",
+)
