@@ -36,3 +36,20 @@ Given a string with lowercase letters only, if you are allowed to replace no mor
 
 Given an array containing 0s and 1s, if you are allowed to replace no more than ‘k’ 0s with 1s, find the length of the longest contiguous subarray having all 1s.
 
+9) [Permutation in a string](sliding_window/contains_permutation)
+
+Given a string and a pattern, find out if the string contains any permutation of the pattern.
+
+10) [Find Anagrams of given string](sliding_window/find_anagrams.py)
+
+Given a string and a pattern, find all anagrams of the pattern in the given string.
+
+11) [Find min length substring](sliding_window/min_length_substring.py)
+
+Given a string and a pattern, find the smallest substring in the given string which has all the characters of the given pattern.
+
+12) [Word concatenation](sliding_window/word_concatenation.py)
+
+Given a string and a list of words, find all the starting indices of substrings in the given string that are a concatenation of all the given words exactly once without any overlapping of words. It is given that all words are of the same length.
+
+

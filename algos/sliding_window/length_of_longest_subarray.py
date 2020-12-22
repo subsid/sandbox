@@ -1,7 +1,6 @@
 # Given an array containing 0s and 1s, if you are allowed to replace no more than ‘k’ 0s with 1s, find the length of the longest contiguous subarray having all 1s.
 
 def length_of_longest_subarray(arr, k):
-    # TODO: Write your code here
     freq_ones = 0
     max_length = 0
     max_length_ones = 0
