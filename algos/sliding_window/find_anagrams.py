@@ -1,3 +1,5 @@
+# Given a string and a pattern, find all anagrams of the pattern in the given string.
+
 def find_anagrams(input_str, pattern):
     freq_window = {}
     freq_pattern = {}

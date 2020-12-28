@@ -1,11 +1,12 @@
+// Given an array, find the average of all contiguous subarrays of size ‘K’ in it.
+// Complexity O(N)
+
 package com.algorithms.sliding_window;
 
 import java.util.Optional;
 import java.util.Arrays;
 
 public class AverageOfSubarrayOfSizeK {
-  // Given an array, find the average of all contiguous subarrays of size ‘K’ in it.
-  // Complexity O(N)
 
   public static double[] findAverages(int K, int[] arr) {
     double[] result = new double[arr.length - K + 1];

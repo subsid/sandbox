@@ -1,3 +1,9 @@
+# Given a string and a list of words, find all the starting indices of substrings in the given string that are a concatenation of all the given words exactly once without any overlapping of words. It is given that all words are of the same length.
+# O(N*M*L)
+# N: Number of chars in input string
+# M: Number of words
+# L: Length of word
+
 def word_concatenation(input_str, words):
     if len(words) == 0:
         return []
