@@ -1,4 +1,4 @@
-Mono Sandbox built with [Bazel](https://bazel.build/) :heart:
+Sandbox for fun and profit!
 
 
 
