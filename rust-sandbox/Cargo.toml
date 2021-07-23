@@ -3,7 +3,13 @@ name = "rust-sandbox"
 version = "0.1.0"
 authors = ["Siddharth <sidharth3930@gmail.com>"]
 edition = "2018"
+description =  "Sandbox with a bunch of examples"
+default-run = "playground"
 
 [dependencies]
-rand = "0.4.0"
+rand = "0.8.3"
+colored = "2.0.0"
+unicode-segmentation = "1.8.0"
+
+
 

@@ -1,8 +1,20 @@
-java_library(
+#java_library(
+#    name = "sandbox",
+#    srcs = glob(["SandboxJava.java"]),
+#    visibility = ["//java-sandbox:__subpackages__"],
+#    deps = [
+#        "@maven//:com_googlecode_json_simple_json_simple",
+#    ],
+#)
+
+java_binary(
     name = "sandbox",
-    srcs = glob(["SandboxJava.java"]),
-    visibility = ["//java-sandbox:__subpackages__"],
-    deps = [],
+    srcs = ["SandboxJava.java"],
+    main_class = "com.sandbox.SandboxJava",
+    deps = [
+        "@maven//:com_googlecode_json_simple_json_simple",
+        "@maven//:junit_junit",
+    ],
 )
 
 java_binary(

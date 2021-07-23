@@ -75,6 +75,10 @@ Given an unsorted array of numbers and a target ‘key’, remove all instances 
 
 Given a sorted array, create a new array containing squares of all the numbers of the input array in the sorted order.
 
+5) [Tripe Sum zero][two_pointers/triple_sum.py]
+
+Given an array of unsorted numbers, find all unique triplets in it that add up to zero.
+
 </details>
 
 

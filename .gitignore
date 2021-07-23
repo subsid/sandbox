@@ -10,3 +10,8 @@ scala-sandbox/target/
 scala-sandbox/project/
 *.bloop
 .caches/
+__pycache__
+*.zip
+.ammonite/
+data/
+models/

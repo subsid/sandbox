@@ -40,6 +40,7 @@ maven_install(
     artifacts = [
         "junit:junit:4.12",
         "org.hamcrest:hamcrest-library:1.3",
+        "com.googlecode.json-simple:json-simple:1.1.1",
     ],
     repositories = [
         "https://jcenter.bintray.com/",
