@@ -10,6 +10,7 @@ default-run = "playground"
 rand = "0.8.3"
 colored = "2.0.0"
 unicode-segmentation = "1.8.0"
+rand_xorshift = "0.3.0"
 
 
 

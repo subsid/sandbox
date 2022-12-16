@@ -1,23 +1,9 @@
 fn main() {
-    let a = "foo";
-    let z = String::from("bar");
-
-    let foo = |z| { z == a };
-
-    println!("{:#?}", a);
-    println!("{}", foo(&z));
-    println!("{}", foo(&z));
-
-    println!("Hello playground!");
+    let a = Box::new(5);
+    let b = vec![1,2,3,4];
+    let c = &b[0..3];
+    let d = c.into_iter().map(|v| *v)
+    let e = c.into_iter().map(|v| *v)
+    println!("{:#?}", c.into_iter().map(|v| *v).zip(d));
 }
-
-#[cfg(test)]
-mod tests {
-    #[test]
-    fn it_works() {
-        assert_eq!(2 + 2, 4);
-    }
-
-}
-
 

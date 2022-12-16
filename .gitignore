@@ -14,5 +14,4 @@ __pycache__
 *.zip
 .ammonite/
 data/
-models/
 _*
