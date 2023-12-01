@@ -1,7 +1,0 @@
-#java_binary(
-#    name = "java-sandbox",
-#    main_class = "com.sandbox.SandboxJava",
-#    runtime_deps = [
-#        "//java-sandbox/src/main/java/com/sandbox",
-#    ],
-#)
