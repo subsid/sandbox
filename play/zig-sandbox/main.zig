@@ -36,5 +36,23 @@ test "zig has inbuilt testing!!" {
         x += 10;
     }
 
-    expect(x == 10);
+    try expect(x == 10);
 }
+
+test "defer" {
+    // Executed before a block exits
+    // Executes in reverse order. Think of a stack.
+    var x: u8 = 5;
+
+    {
+        defer x += 2;
+        // Print without arguments
+        std.debug.print("****\n", .{});
+        std.debug.print("X value is {d}", .{x});
+        try expect(x == 5);
+    }
+
+    try expect(x == 7);
+}
+
+test "error values and unions in zig" {}
